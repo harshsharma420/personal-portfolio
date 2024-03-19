@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');//navbar font
+@import url('https://fonts.cdnfonts.com/css/uni-0553');//sabrinas.space
+
+nav{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    ul{
+        overflow:hidden;
+        list-style-type:none;
+        border: 2px solid;
+        border-color: black;
+        box-shadow: 5px 5px 0 -3px rgb(255, 255, 255),5px 5px 0 0px rgb(0, 0, 0);
+        padding :1rem 2rem;
+        
+        
+        li{
+            // font-family: 'uni 05_53', sans-serif;
+            font-family: 'VT323', monospace;
+            text-transform: uppercase;
+            display: block;
+            text-align: center;
+            font-size: 2rem;
+            float:inline-start;
+            padding :1rem 2rem;
+            cursor: pointer;
+        }
+        li:hover:nth-child(even){
+            text-decoration: underline dashed;
+            // text-decoration-color: rgb(255, 141, 247);
+            text-decoration-color: rgb(141, 206, 255);
+            // background-color: greenyellow;
+            // background-clip: padding-box;
+            color: black;
+
+        }
+        li:hover:nth-child(odd){
+            text-decoration: underline dashed;
+            // text-decoration-color: rgb(255, 141, 247);
+            text-decoration-color: rgb(141, 255, 164);
+            // background-color: greenyellow;
+            // background-clip: padding-box;
+            color: black;
+
+        }
+    }
+}

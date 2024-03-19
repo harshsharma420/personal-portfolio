@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Micro+5&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');//navbar font
+
+.container {
+    margin: 1rem;
+    // padding: 1rem;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    // border: 1px solid pink;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    // border: 1px solid;
+
+    .main-attraction {
+        // align-self: center;
+        // justify-self: center;
+        position: absolute;
+        left: 2rem;
+        font-size: 5em;
+
+        .ideas-font {
+            font-family: "Sacramento", cursive;
+            font-weight: 400;
+            font-style: normal;
+            color: rgb(140, 140, 236);
+            background-color: lightblue;
+            cursor: pointer;
+        }
+        
+        .code-font {
+            font-family: 'VT323', monospace;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            text-transform: uppercase;
+            color: greenyellow;
+            background-color: black;
+            cursor: pointer;
+        }
+    }
+
+    p:hover {
+        color: black;
+    }
+
+    .sidenote {
+        font-family: "Grand Hotel", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3em;
+        position: absolute;
+        left: 2rem;
+        bottom: 0rem;
+        display: grid;
+        grid-template-areas: "text"  "button";
+        grid-template-rows: repeat(2,auto);
+        grid-template-columns: auto;
+        p{
+
+            grid-area: text;
+        }
+    }
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    width: 425px;
+    // border: 10px solid rgb(182, 182, 242);
+    box-shadow: 7px 7px rgb(255, 141, 247), 14px 14px rgb(141, 255, 164), 21px 21px rgb(141, 206, 255);
+}
+
+.fixed-position {
+    // display: flex;
+    position: fixed;
+    // align-items: center;
+    // justify-items: center;
+    // position: fixed;
+    // align-self: center;
+    // justify-self: center;
+    // margin: 2rem;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    opacity: 0.2;
+    font-size: 20vw; /* Adjust this value as needed */
+    max-width: 90%;
+    transform: translate(-50%, -50%);
+    // border: 2px solid black;
+}
+
+.buttons{
+    margin-top: 3rem;
+    // margin-left: 30rem;
+    // margin-right: 30rem;
+    // position: absolute;
+    font-size: 1em;
+    background-color: #2b2e28;
+    color: white;
+    border: 2px solid;
+    border-color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow:5px 5px 0 -3px white,5px 5px 0 0 black;
+    text-align: center;
+    grid-area: button;
+    // justify-self: center;
+    span{
+        font-weight: 500;
+        font-size: 3rem;
+        text-transform:uppercase;
+        // text-decoration: double;
+        letter-spacing: 0.1em;
+        // text-decoration:underline double;
+        font-family: 'VT323', monospace;
+    }
+}
+.buttons:hover{
+    cursor:pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    border-color: black;
+    box-shadow:5px 5px black;
+
+
+
+}
