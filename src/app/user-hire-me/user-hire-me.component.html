@@ -1,0 +1,25 @@
+<form [formGroup]="data" (ngSubmit)="sendMail()">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" formControlName="name"><br>
+        <span *ngIf="name && name.invalid && (name.touched || name.dirty)">invalid data</span>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="text" formControlName="email"><br>
+        <span *ngIf="email && email.invalid && (email.touched || email.dirty)">invalid data</span>
+    </div>
+    <div>
+        <label for="subject">Subject:</label>
+        <input type="text" formControlName="subject"><br>
+        <span *ngIf="subject && subject.invalid && (subject.touched || subject.dirty)">invalid data</span>
+    </div>
+    <div>
+        <label for="message">Message:</label>
+        <input type="textarea" formControlName="message"><br>
+        <span *ngIf="message && message.invalid && (message.touched || message.dirty)">invalid data</span>
+    </div>
+    <div>
+        <button type="submit">Submit!</button>
+    </div>
+</form>

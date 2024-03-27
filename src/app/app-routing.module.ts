@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 import { UserMyWorkComponent } from './user-my-work/user-my-work.component';
+import { UserHireMeComponent } from './user-hire-me/user-hire-me.component';
 
 const routes: Routes = [
   {
     path:'',
-    redirectTo:'my-work',
+    redirectTo:'home',
     pathMatch: 'full'
   },
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path:'my-work',
     component:UserMyWorkComponent
+  },
+  {
+    path:'hire-me',
+    component:UserHireMeComponent
   },
   {
     path:'**',
