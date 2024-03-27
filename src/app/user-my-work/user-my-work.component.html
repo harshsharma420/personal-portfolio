@@ -1,1 +1,14 @@
-<p>user-my-work works!</p>
+<div class="main-container">
+    <div class="header">
+        Working Experience
+    </div>
+    <div class="items">
+        <ul>
+            <li *ngFor="let exp of work">
+                {{exp.companyName}}
+                {{exp.startDate | date:'MMM:yyyy'}} to {{exp.endDate | date:'MMM:yyyy'}}
+                {{exp.designation}}
+            </li>
+        </ul>
+    </div>
+</div>

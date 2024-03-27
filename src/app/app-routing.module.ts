@@ -6,7 +6,8 @@ import { UserMyWorkComponent } from './user-my-work/user-my-work.component';
 const routes: Routes = [
   {
     path:'',
-    component:HomePageComponent,
+    redirectTo:'my-work',
+    pathMatch: 'full'
   },
   {
     path:'home',

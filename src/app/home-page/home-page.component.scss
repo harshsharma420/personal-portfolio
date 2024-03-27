@@ -14,6 +14,7 @@
     display: flex;
     position: relative;
     // border: 1px solid;
+    margin: 2rem;
 
     .main-attraction {
         // align-self: center;
@@ -70,6 +71,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 2rem;
 }
 
 img {
@@ -133,7 +135,31 @@ img {
     border: 2px solid;
     border-color: black;
     box-shadow:5px 5px black;
+}
 
+@media all and (max-width:768px){
+    .container{
+        margin: 1rem;
+        // padding: 1rem;
+        margin-top: 5rem;
+        // display: grid;
+        grid-template-rows: 80% auto;
+        grid-template-columns: auto;
+        grid-template-areas:  
+        "content" 
+        "image";
+    }
+
+    .content{
+        grid-area: content;
+        margin-bottom: 2rem;
+        // display: flex;
+    }
+    
+    .img-container{
+        grid-area: image;
+        margin-bottom: 2rem;
+    }
 
 
 }
