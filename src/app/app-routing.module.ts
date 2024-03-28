@@ -7,8 +7,7 @@ import { UserHireMeComponent } from './user-hire-me/user-hire-me.component';
 const routes: Routes = [
   {
     path:'',
-    redirectTo:'home',
-    pathMatch: 'full'
+    component:HomePageComponent
   },
   {
     path:'home',

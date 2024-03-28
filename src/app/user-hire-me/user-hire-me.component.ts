@@ -15,7 +15,7 @@ export class UserHireMeComponent {
   })
 
 
-
+// yet to setup an node.js app for sending mail but still debating how I'm going to do it.
   sendMail() {
     if (this.data.invalid) {
       alert("fill all details correctly");
